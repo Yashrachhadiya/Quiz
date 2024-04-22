@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <div class="max-w-screen-2xl mx-auto text-center p-5 text-5xl font-bolder">
+        Quiz
+    </div>
+    <div class="max-w-screen-2xl mx-auto text-left p-5 text-2xl uppercase font-bolder"  >
+      <div id="userName"></div>
+      <P id="scoreContainer"></P>
+      <p id="resultContainer"></p>
+      <br>
+      <button class="px-2 rounded-md bg-amber-400"  id="quizStart" onclick="startQuizTimer()">start</button>
+      <button class="rounded-md bg-blue-400 px-2 " onclick="restartQuiz()">Restart</button>
+          
+    </div>
+    
+
+    
+
+    <div class="max-w-screen-2xl mx-auto flex-row  p-10 justify-evenly gap-y-18 border border-4  rounded-lg text-left my-12">
+
+
+        <div class="question-1 mb-5 ">
+            <p class="text-xl"> Q1. what is the 3 color used in national flag of india?</p>
+            <input type="radio" name="q1" value="red green blue" id="">
+            <label for="option-1"> red green blue</label>
+            <input type="radio" name="q1" id="" value="orange green blue">
+            <label for="option-2"> orange green blue</label>
+            <input type="radio" name="q1" id="" value="orange white green">
+            <label for="option-3"> orange white green</label>
+            <input type="radio" name="q1" id="" value="red green pink">
+            <label for="option-4"> red green pink</label>
+            <p id="result1"></p>
+        </div>
+
+        <div class="question-2 mb-5">
+            <p class="text-xl">Q2. which is not indian city? </p>
+            <input type="radio" name="q2" value="surat" id="">
+            <label for="option-1"> surat</label>
+            <input type="radio" name="q2" id="" value="kolkata">
+            <label for="option-2"> kolkata</label>
+            <input type="radio" name="q2" id="" value="Bombay">
+            <label for="option-3"> Bombay</label>
+            <input type="radio" name="q2" id="" value="ontario">
+            <label for="option-4"> Ontario</label>
+            <p id="result2"></p>
+        </div>
+
+        <div class="question-3 mb-5">
+            <p class="text-xl">Q3. How many colours in rainbow? </p>
+            <input type="radio" name="q3" value="7" id="">
+            <label for="option-1"> 7</label>
+            <input type="radio" name="q3" id="" value="5">
+            <label for="option-2">5</label>
+            <input type="radio" name="q3" id="" value="6">
+            <label for="option-3"> 6</label>
+            <input type="radio" name="q3" id="" value="12">
+            <label for="option-4"> 12</label>
+            <p id="result3"></p>
+        </div>
+
+        <div class="question-4 mb-5">
+            <p class="text-xl">Q4. Which is not owns by Volkswagen Group?</p>
+            <input type="radio" name="q4" value="Scania" id="">
+            <label for="option-1"> Scania</label>
+            <input type="radio" name="q4" id="" value="BMW">
+            <label for="option-2">BMW</label>
+            <input type="radio" name="q4" id="" value="Audi">
+            <label for="option-3"> Audi</label>
+            <input type="radio" name="q4" id="" value="MAN">
+            <label for="option-4"> MAN</label>
+            <p id="result4"></p>
+        </div>
+
+        <div class="question-5 mb-5">
+            <p class="text-xl">Q5. In which year india got independence? </p>
+            <input type="radio" name="q5" value="15 Auguest 1947" id="">
+            <label for="option-1"> 15 Auguest 1947</label>
+            <input type="radio" name="q5" id="" value="21 June 1934">
+            <label for="option-2">21 June 1934</label>
+            <input type="radio" name="q5" id="" value="12 December 2002">
+            <label for="option-3"> 12 December 2002</label>
+            <input type="radio" name="q3" id="" value="27 July 1943">
+            <label for="option-4"> 27 July 1943</label>
+            <p id="result5"></p>
+        </div>
+
+        <div class="question-6 mb-5">
+            <p class="text-xl">Q6.Who is the Current prime minister of India? </p>
+            <input type="radio" name="q6" value="Rahul Gandhi" id="">
+            <label for="option-1"> Rahul Gandhi</label>
+            <input type="radio" name="q6" id="" value="Arvind Kejriwal">
+            <label for="option-2">Arvind Kejrival</label>
+            <input type="radio" name="q6" id="" value="Narendra Modi">
+            <label for="option-3"> Narendra Modi</label>
+            <input type="radio" name="q6" id="" value="Nitin Gadkari">
+            <label for="option-4"> Nitin Gadkari</label>
+            <p id="result6"></p>
+        </div>
+
+        <div class="question-7 mb-5">
+            <p class="text-xl">Q7. 10 + 2 = ___? </p>
+            <input type="radio" name="q7" value="12" id="">
+            <label for="option-1">12</label>
+            <input type="radio" name="q7" id="" value="14 ">
+            <label for="option-2">14</label>
+            <input type="radio" name="q7" id="" value="100">
+            <label for="option-3"> 100</label>
+            <input type="radio" name="q7" id="" value="40">
+            <label for="option-4"> 40</label>
+            <p id="result7"></p>
+        </div>
+
+
+        <div class="question-8 mb-5">
+            <p class="text-xl">Q8. 0 , 1 , 1 , 2 , 3 , 5 , ___? </p>
+           
+            <input type="radio" name="q8" id="" value="14 ">
+            <label for="option-2">14</label>
+            <input type="radio" name="q8" id="" value="12">
+            <label for="option-3"> 12</label>
+            <input type="radio" name="q8" id="" value="7">
+            <label for="option-4"> 7</label>
+            <input type="radio" name="q8" value="8" id="">
+            <label for="option-1">8</label>
+            <p id="result8"></p>
+        </div>
+
+
+        <div class="question-9 mb-5">
+            <p class="text-xl">Q9. who is the current governor of RBI ? </p>
+            <input type="radio" name="q9" id="" value="Urjit R Patel">
+            <label for="option-2">Urjit R Patel</label>
+            <input type="radio" name="q9" value="Shaktikanta Das" id="">
+            <label for="option-1">Shaktikanta Das</label>
+            <input type="radio" name="q9" id="" value="Nirmala Sitaraman">
+            <label for="option-3"> Nirmala Sitaraman</label>
+            <input type="radio" name="q9" id="" value="Narendra Modi">
+            <label for="option-4"> Narendra Modi</label>
+            <p id="result9"></p>
+        </div>
+
+
+
+        <div class="question-10 mb-5">
+            <p class="text-xl">Q10. What is the color of blood when it's inside your body?</p>
+            <input type="radio" name="q10" id="" value="Green">
+            <label for="option-2">Green</label>
+            <input type="radio" name="q10" id="" value="Blue">
+            <label for="option-3"> Blue</label>
+            <input type="radio" name="q10" id="" value="Black">
+            <label for="option-4"> Black</label> <input type="radio" name="q10" value="Red" id="">
+            <label for="option-1">Red</label>
+            <p id="result10"></p>
+        </div>
+
+        <div class="question-11 mb-5">
+            <p class="text-xl">Q11. Which element has the chemical symbol 'O'?</p>
+            <input type="radio" name="q11" value="Gold" id="option-1-q11">
+            <label for="option-1-q11"> Gold</label>
+            <input type="radio" name="q11" value="Oxygen" id="option-2-q11">
+            <label for="option-2-q11"> Oxygen</label>
+            <input type="radio" name="q11" value="Silver" id="option-3-q11">
+            <label for="option-3-q11"> Silver</label>
+            <input type="radio" name="q11" value="Helium" id="option-4-q11">
+            <label for="option-4-q11"> Helium</label>
+            <p id="result11"></p>
+        </div>
+        
+        <div class="question-12 mb-5">
+            <p class="text-xl">Q12. Who wrote 'Romeo and Juliet'?</p>
+            <input type="radio" name="q12" value="Charles Dickens" id="option-1-q12">
+            <label for="option-1-q12"> Charles Dickens</label>
+            <input type="radio" name="q12" value="William Shakespeare" id="option-2-q12">
+            <label for="option-2-q12"> William Shakespeare</label>
+            <input type="radio" name="q12" value="Jane Austen" id="option-3-q12">
+            <label for="option-3-q12"> Jane Austen</label>
+            <input type="radio" name="q12" value="Mark Twain" id="option-4-q12">
+            <label for="option-4-q12"> Mark Twain</label>
+            <p id="result12"></p>
+        </div>
+        <div class="question-13 mb-5">
+            <p class="text-xl">Q13. What is the hardest natural substance on Earth?</p>
+            <input type="radio" name="q13" value="Gold" id="option-1-q13">
+            <label for="option-1-q13"> Gold</label>
+            <input type="radio" name="q13" value="Iron" id="option-2-q13">
+            <label for="option-2-q13"> Iron</label>
+            <input type="radio" name="q13" value="Diamond" id="option-3-q13">
+            <label for="option-3-q13"> Diamond</label>
+            <input type="radio" name="q13" value="Quartz" id="option-4-q13">
+            <label for="option-4-q13"> Quartz</label>
+            <p id="result13"></p>
+        </div>
+        <div class="question-14 mb-5">
+            <p class="text-xl">Q14. What is the largest planet in our solar system?</p>
+            <input type="radio" name="q14" value="Earth" id="option-1-q14">
+            <label for="option-1-q14"> Earth</label>
+            <input type="radio" name="q14" value="Jupiter" id="option-2-q14">
+            <label for="option-2-q14"> Jupiter</label>
+            <input type="radio" name="q14" value="Saturn" id="option-3-q14">
+            <label for="option-3-q14"> Saturn</label>
+            <input type="radio" name="q14" value="Neptune" id="option-4-q14">
+            <label for="option-4-q14"> Neptune</label>
+            <p id="result14"></p>
+        </div>
+        <div class="question-15 mb-5">
+            <p class="text-xl">Q15. What year did the Titanic sink?</p>
+            <input type="radio" name="q15" value="1912" id="option-1-q15">
+            <label for="option-1-q15"> 1912</label>
+            <input type="radio" name="q15" value="1905" id="option-2-q15">
+            <label for="option-2-q15"> 1905</label>
+            <input type="radio" name="q15" value="1898" id="option-3-q15">
+            <label for="option-3-q15"> 1898</label>
+            <input type="radio" name="q15" value="1923" id="option-4-q15">
+            <label for="option-4-q15"> 1923</label>
+            <p id="result15"></p>
+        </div>
+                                
+
+
+
+
+        <div class="flex justify-center gap-x-12">
+            <button class="rounded-full bg-amber-400 py-2 px-4 " onclick="verifyAns()">submit</button>
+         
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
